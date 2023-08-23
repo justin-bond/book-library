@@ -86,6 +86,13 @@ main {
 
 }
 
+.page-loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
   main {
     padding-top: 80px;

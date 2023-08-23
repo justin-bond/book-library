@@ -1,0 +1,9 @@
+.card {
+  background-color: var(--color-ochre);
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+
+  &.rounded {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+}

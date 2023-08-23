@@ -1,0 +1,42 @@
+.book-cards {
+  margin-bottom: 100px;
+
+  .book-card {
+    background-color: var(--color-ochre);
+    position: relative;
+    padding-bottom: 100%;
+
+    &:hover {
+      .book-card__content {
+        scale: 1.1;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    &__content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 500ms ease;
+      color: var(--color-white);
+      padding: 24px;
+      text-align: center;
+    }
+
+    &__favorite {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+
+      @media screen and (min-width: 768px) {
+        top: 24px;
+        right: 24px;
+      }
+    }
+  }
+}

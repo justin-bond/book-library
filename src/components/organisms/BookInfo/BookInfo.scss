@@ -1,0 +1,22 @@
+.book-info {
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 12px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__publish_date {
+    font-weight: 600;
+  }
+
+  &__description {
+    white-space: break-spaces;
+  }
+}

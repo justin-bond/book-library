@@ -1,0 +1,13 @@
+.button {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  color: var(--color-white);
+  background-color: var(--color-lavender);
+  border: 0;
+  border-radius: var(--border-radius);
+  padding: 8px;
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  cursor: pointer;
+}

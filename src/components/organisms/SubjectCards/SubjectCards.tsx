@@ -3,7 +3,7 @@ import Link from "next/link";
 import Cards from "@/components/molecules/Cards";
 import { renderSubjectImage } from "@/helpers/renderSubjectImage";
 
-import { SubjectInfo } from "@/pages/subject/[slug]";
+import { SubjectDetails } from "@/pages/subject/[slug]";
 import { slugify } from "@/utils/stringFormatting";
 
 import "./SubjectCards.scss";
@@ -11,11 +11,11 @@ import clsx from "clsx";
 
 interface SubjectCardsProps {
   title?: string;
-  subjects: SubjectInfo[];
+  subjects: SubjectDetails[];
 }
 
 const SubjectCards = ({ title, subjects }: SubjectCardsProps) => {
-  const renderSubjects = (subject: SubjectInfo) => {
+  const renderSubjects = (subject: SubjectDetails) => {
     const image = renderSubjectImage(subject.name.toLowerCase());
     return (
       <div className={clsx("subject-card", { "has-image": image })}>

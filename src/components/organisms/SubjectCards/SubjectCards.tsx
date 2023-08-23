@@ -1,4 +1,5 @@
 import Link from "next/link";
+import clsx from "clsx";
 
 import Cards from "@/components/molecules/Cards";
 import { renderSubjectImage } from "@/helpers/renderSubjectImage";
@@ -7,7 +8,6 @@ import { SubjectDetails } from "@/pages/subject/[slug]";
 import { slugify } from "@/utils/stringFormatting";
 
 import "./SubjectCards.scss";
-import clsx from "clsx";
 
 interface SubjectCardsProps {
   title?: string;

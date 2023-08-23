@@ -1,3 +1,4 @@
+import Meta from "@/components/atoms/Meta";
 import Container from "@/components/molecules/Container";
 import SubjectCards from "@/components/organisms/SubjectCards";
 import Layout from "@/components/templates/Layout";
@@ -13,6 +14,7 @@ interface HomeProps {
 export default function Home({ subjects }: HomeProps) {
   return (
     <Layout title="Library">
+      <Meta title="Library" />
       <Container>
         <SubjectCards subjects={subjects} />
       </Container>

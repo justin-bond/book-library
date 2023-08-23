@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
 import Link from "next/link";
+import clsx from "clsx";
 
 import Container from "@/components/molecules/Container";
 
 import "./Layout.scss";
-import clsx from "clsx";
 
 interface LayoutProps {
   title?: string;

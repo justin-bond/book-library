@@ -1,3 +1,4 @@
+import Meta from "@/components/atoms/Meta";
 import Container from "@/components/molecules/Container";
 import BookCards from "@/components/organisms/BookCards";
 import Layout from "@/components/templates/Layout";
@@ -20,6 +21,7 @@ interface SubjectPageProps {
 const SubjectPage = ({ subject }: SubjectPageProps) => {
   return (
     <Layout title={subject.name} breadcrumbs={[{ label: subject.name }]}>
+      <Meta title={subject.name} />
       <Container>
         <BookCards books={subject.works} />
         <SubjectCards

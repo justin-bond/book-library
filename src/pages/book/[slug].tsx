@@ -1,7 +1,6 @@
+import Meta from "@/components/atoms/Meta";
 import Container from "@/components/molecules/Container";
-import BookCards from "@/components/organisms/BookCards";
 import BookInfo from "@/components/organisms/BookInfo";
-import SubjectCards from "@/components/organisms/SubjectCards";
 import Layout from "@/components/templates/Layout";
 
 import { getBookByID } from "@/lib/api";
@@ -22,6 +21,7 @@ interface BookPageProps {
 const BookPage = ({ book }: BookPageProps) => {
   return (
     <Layout title={book.title} breadcrumbs noBackground>
+      <Meta title={book.title} />
       <Container>
         <BookInfo {...book} />
       </Container>

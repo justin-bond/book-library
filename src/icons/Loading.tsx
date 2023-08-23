@@ -13,7 +13,7 @@ const Loading = ({ className, ...props }: LoadingProps) => {
       fill="none"
       {...props}
     >
-      <circle fill="#D47F1B" stroke="none" cx="6" cy="50" r="6">
+      <circle fill="#D47F1B" stroke="none" cx="30" cy="50" r="6">
         <animate
           attributeName="opacity"
           dur="1s"
@@ -22,7 +22,7 @@ const Loading = ({ className, ...props }: LoadingProps) => {
           begin="0.1"
         />
       </circle>
-      <circle fill="#D47F1B" stroke="none" cx="26" cy="50" r="6">
+      <circle fill="#D47F1B" stroke="none" cx="50" cy="50" r="6">
         <animate
           attributeName="opacity"
           dur="1s"
@@ -31,7 +31,7 @@ const Loading = ({ className, ...props }: LoadingProps) => {
           begin="0.2"
         />
       </circle>
-      <circle fill="#D47F1B" stroke="none" cx="46" cy="50" r="6">
+      <circle fill="#D47F1B" stroke="none" cx="70" cy="50" r="6">
         <animate
           attributeName="opacity"
           dur="1s"
